@@ -1,0 +1,594 @@
+<html lang="ja">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   ログイン - 市民利用施設予約システム
+  </title>
+ </head>
+ <body class="">
+  <use xlink:href="dist/images/icons.svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  </use>
+  <link href="/user/dist/bootstrap.css?v=eksHv4LtcHBNIJlK1x2OnPgP4HicQJVS6ZQgKSUIjIE" rel="stylesheet"/>
+  <link href="/user/dist/bootstrap-vue.css?v=Q_3wkoGKsWFJ6--zeQHPEaMW0KV8b1_sYxGuGiM0Gbk" rel="stylesheet"/>
+  <link href="/user/dist/customize.scss.css?v=gKHXYBBzye-Gd6cT5E-SEBavU7XOFwimMsjq21jrJi8" rel="stylesheet"/>
+  <link href="/user/dist/login.scss.css?v=7nZC1dsHSSLDFM-1gfs8nAny6sK9Sj1smMYJMx76WCY" rel="stylesheet"/>
+  <script type="text/javascript">
+   !function(T,l,y){var S=T.location,k="script",D="instrumentationKey",C="ingestionendpoint",I="disableExceptionTracking",E="ai.device.",b="toLowerCase",w="crossOrigin",N="POST",e="appInsightsSDK",t=y.name||"appInsights";(y.name||T[e])&&(T[e]=t);var n=T[t]||function(d){var g=!1,f=!1,m={initialize:!0,queue:[],sv:"5",version:2,config:d};function v(e,t){var n={},a="Browser";return n[E+"id"]=a[b](),n[E+"type"]=a,n["ai.operation.name"]=S&&S.pathname||"_unknown_",n["ai.internal.sdkVersion"]="javascript:snippet_"+(m.sv||m.version),{time:function(){var e=new Date;function t(e){var t=""+e;return 1===t.length&&(t="0"+t),t}return e.getUTCFullYear()+"-"+t(1+e.getUTCMonth())+"-"+t(e.getUTCDate())+"T"+t(e.getUTCHours())+":"+t(e.getUTCMinutes())+":"+t(e.getUTCSeconds())+"."+((e.getUTCMilliseconds()/1e3).toFixed(3)+"").slice(2,5)+"Z"}(),iKey:e,name:"Microsoft.ApplicationInsights."+e.replace(/-/g,"")+"."+t,sampleRate:100,tags:n,data:{baseData:{ver:2}}}}var h=d.url||y.src;if(h){function a(e){var t,n,a,i,r,o,s,c,u,p,l;g=!0,m.queue=[],f||(f=!0,t=h,s=function(){var e={},t=d.connectionString;if(t)for(var n=t.split(";"),a=0;a<n.length;a++){var i=n[a].split("=");2===i.length&&(e[i[0][b]()]=i[1])}if(!e[C]){var r=e.endpointsuffix,o=r?e.location:null;e[C]="https://"+(o?o+".":"")+"dc."+(r||"services.visualstudio.com")}return e}(),c=s[D]||d[D]||"",u=s[C],p=u?u+"/v2/track":d.endpointUrl,(l=[]).push((n="SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)",a=t,i=p,(o=(r=v(c,"Exception")).data).baseType="ExceptionData",o.baseData.exceptions=[{typeName:"SDKLoadFailed",message:n.replace(/\./g,"-"),hasFullStack:!1,stack:n+"\nSnippet failed to load ["+a+"] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: "+(S&&S.pathname||"_unknown_")+"\nEndpoint: "+i,parsedStack:[]}],r)),l.push(function(e,t,n,a){var i=v(c,"Message"),r=i.data;r.baseType="MessageData";var o=r.baseData;return o.message='AI (Internal): 99 message:"'+("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) ("+n+")").replace(/\"/g,"")+'"',o.properties={endpoint:a},i}(0,0,t,p)),function(e,t){if(JSON){var n=T.fetch;if(n&&!y.useXhr)n(t,{method:N,body:JSON.stringify(e),mode:"cors"});else if(XMLHttpRequest){var a=new XMLHttpRequest;a.open(N,t),a.setRequestHeader("Content-type","application/json"),a.send(JSON.stringify(e))}}}(l,p))}function i(e,t){f||setTimeout(function(){!t&&m.core||a()},500)}var e=function(){var n=l.createElement(k);n.src=h;var e=y[w];return!e&&""!==e||"undefined"==n[w]||(n[w]=e),n.onload=i,n.onerror=a,n.onreadystatechange=function(e,t){"loaded"!==n.readyState&&"complete"!==n.readyState||i(0,t)},n}();y.ld<0?l.getElementsByTagName("head")[0].appendChild(e):setTimeout(function(){l.getElementsByTagName(k)[0].parentNode.appendChild(e)},y.ld||0)}try{m.cookie=l.cookie}catch(p){}function t(e){for(;e.length;)!function(t){m[t]=function(){var e=arguments;g||m.queue.push(function(){m[t].apply(m,e)})}}(e.pop())}var n="track",r="TrackPage",o="TrackEvent";t([n+"Event",n+"PageView",n+"Exception",n+"Trace",n+"DependencyData",n+"Metric",n+"PageViewPerformance","start"+r,"stop"+r,"start"+o,"stop"+o,"addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext","flush"]),m.SeverityLevel={Verbose:0,Information:1,Warning:2,Error:3,Critical:4};var s=(d.extensionConfig||{}).ApplicationInsightsAnalytics||{};if(!0!==d[I]&&!0!==s[I]){var c="onerror";t(["_"+c]);var u=T[c];T[c]=function(e,t,n,a,i){var r=u&&u(e,t,n,a,i);return!0!==r&&m["_"+c]({message:e,url:t,lineNumber:n,columnNumber:a,error:i}),r},d.autoExceptionInstrumented=!0}return m}(y.cfg);function a(){y.onInit&&y.onInit(n)}(T[t]=n).queue&&0===n.queue.length?(n.queue.push(a),n.trackPageView({})):a()}(window,document,{
+src: "https://js.monitor.azure.com/scripts/b/ai.2.min.js", // The SDK URL Source
+crossOrigin: "anonymous", 
+cfg: { // Application Insights Configuration
+    connectionString: 'InstrumentationKey=cc0ffb03-a37b-4b96-8958-12c165bec9f8;IngestionEndpoint=https://japaneast-1.in.applicationinsights.azure.com/;LiveEndpoint=https://japaneast.livediagnostics.monitor.azure.com/'
+}});
+  </script>
+  <script>
+   // 利用者メニューコード　
+        var mainMenuCode = ['10','20','21','22','23','30','31','32','33','40','50','60'];
+
+        // メニュー選択時の警告メッセージ
+        var onBeforeunloadHandler = function(e) {
+            if (e.target.activeElement.localName ==="button" ||
+                e.target.activeElement.type ==="submit" ||
+                e.target.activeElement.type ==="checkbox" ||
+                e.target.activeElement.type ==="radio" ||
+                e.target.activeElement.localName ==="span" ||
+                e.target.activeElement.localName ==="a" ||
+                e.target.activeElement.type ==="button" ||
+                e.target.activeElement.localName ==="body")
+            {
+                // イベントを削除
+                window.removeEventListener('beforeunload',this.onBeforeunloadHandler,false);
+                return null;
+            }
+            else
+            {
+                let confirmationMessage =  "現在の処理を中止し、他の画面に遷移します。よろしいですか？";
+                //Gecko + IE用
+                (e || window.event).returnValue = confirmationMessage;
+                //IE以外用
+                return confirmationMessage;
+            }
+        };
+
+        // マイメニューの場合、警告メッセージがされないようにする
+        document.addEventListener('click', function(evt) {
+            let selectedMenu = evt.currentTarget.activeElement.id;
+            let exist = mainMenuCode.includes(selectedMenu);
+            if (exist || evt.target.type ==="button" ||
+                evt.target.type ==="submit" ||
+                evt.target.type ==="checkbox" ||
+                evt.target.type ==="radio" ||
+                evt.target.localName ==="span" ||
+                evt.target.localName ==="button" ||
+                evt.target.localName ==="body") {
+
+                // イベントを削除
+                window.removeEventListener('beforeunload', onBeforeunloadHandler, false);
+            }
+        }, false);
+
+        // イベントを登録
+        window.addEventListener('beforeunload', onBeforeunloadHandler, false);
+  </script>
+  <div id="app">
+   <div>
+    <form name="headerForm">
+     <header class="header-wrapper">
+      <div class="header d-flex flex-column" style="overflow: hidden;">
+       <div class="slider1" id="slide-container">
+        <a class="item-1 item-css-1" id="slider1" target="blank">
+        </a>
+        <a class="item-2 item-css-2" href="https://expo2027yokohama.or.jp/" id="slider2" target="blank">
+        </a>
+        <a class="item-1 item-css-3" id="slider3" target="blank">
+        </a>
+        <a class="item-2 item-css-4" href="https://expo2027yokohama.or.jp/" id="slider4" target="blank">
+        </a>
+        <a class="item-1 item-css-5" id="slider5" target="blank">
+        </a>
+        <a class="item-2 item-css-6" href="https://expo2027yokohama.or.jp/" id="slider6" target="blank">
+        </a>
+        <a class="item-1 item-css-7" id="slider7" target="blank">
+        </a>
+        <a class="item-2 item-css-8" href="https://expo2027yokohama.or.jp/" id="slider8" target="blank">
+        </a>
+        <a class="item-1 item-css-9" id="slider9" target="blank">
+        </a>
+        <a class="item-2 item-css-10" href="https://expo2027yokohama.or.jp/" id="slider10" target="blank">
+        </a>
+        <a class="item-1 item-css-11" id="slider11" target="blank">
+        </a>
+        <a class="item-2 item-css-12" href="https://expo2027yokohama.or.jp/" id="slider12" target="blank">
+        </a>
+        <a class="item-1 item-css-13" id="slider13" target="blank">
+        </a>
+        <a class="item-2 item-css-14" href="https://expo2027yokohama.or.jp/" id="slider14" target="blank">
+        </a>
+        <a class="item-1 item-css-15" id="slider15" target="blank">
+        </a>
+        <a class="item-2 item-css-16" href="https://expo2027yokohama.or.jp/" id="slider16" target="blank">
+        </a>
+        <a class="item-1 item-css-17" id="slider17" target="blank">
+        </a>
+        <a class="item-2 item-css-18" href="https://expo2027yokohama.or.jp/" id="slider18" target="blank">
+        </a>
+        <a class="item-1 item-css-19" id="slider19" target="blank">
+        </a>
+        <a class="item-2 item-css-20" href="https://expo2027yokohama.or.jp/" id="slider20" target="blank">
+        </a>
+        <a class="item-1 item-css-21" id="slider21" target="blank">
+        </a>
+        <a class="item-2 item-css-22" href="https://expo2027yokohama.or.jp/" id="slider22" target="blank">
+        </a>
+        <a class="item-1 item-css-23" id="slider23" target="blank">
+        </a>
+        <a class="item-2 item-css-24" href="https://expo2027yokohama.or.jp/" id="slider24" target="blank">
+        </a>
+        <a class="item-1 item-css-25" id="slider25" target="blank">
+        </a>
+        <a class="item-2 item-css-26" href="https://expo2027yokohama.or.jp/" id="slider26" target="blank">
+        </a>
+        <a class="item-1 item-css-27" id="slider27" target="blank">
+        </a>
+        <a class="item-2 item-css-28" href="https://expo2027yokohama.or.jp/" id="slider28" target="blank">
+        </a>
+        <a class="item-1 item-css-29" id="slider29" target="blank">
+        </a>
+        <a class="item-2 item-css-30" href="https://expo2027yokohama.or.jp/" id="slider30" target="blank">
+        </a>
+       </div>
+       <div class="slide-btn ml-2 btn-1 slide-btn-1-slider" id="btn-left" style="font-size: 40px; cursor: pointer;">
+        &lt;
+       </div>
+       <div class="slide-btn mr-2 btn-2 slide-btn-2-slider" id="btn-right" style="font-size: 40px; cursor: pointer;">
+        &gt;
+       </div>
+       <div class="on" id="stop-playing-button">
+        <img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAQklEQVR4nGNgGAUDAv7//2/6////bCQsiCQniCZnSorBDf9RgTaSnDaaXMOowTAwGhRwMBoUIyUoTGlSCI0CBmoCAJT7AFeI2DPCAAAAAElFTkSuQmCC"/>
+        停止
+       </div>
+       <script type="application/javascript">
+        document.addEventListener("DOMContentLoaded", (event) => {
+  
+  
+                          const scrollInterval = 7000;
+                          const flagId = 'swiper!!';
+                          if (document.getElementById(flagId) === null) {
+                              //
+                            const click = function(event){
+                                const slide = document.getElementById('slide-container');
+                                const current = slide.className;
+                                const currentNo = Number(slide.className.replace(/[^0-9.]/g, ''));
+                                let nextNo = currentNo
+                                if (event && event.target.id === 'btn-left') {
+                                    nextNo = nextNo - 1
+                                } else {
+                                    nextNo = nextNo + 1
+                                }
+                                if (nextNo >= 30) {
+                                    slide.classList.remove(current);
+                                    slide.classList.add('slider' + (1));
+                                } else if (nextNo <= 0) {
+                                    slide.classList.remove(current);
+                                    slide.classList.add('slider' + (30));
+                                } else {
+                                    slide.classList.remove(current);
+                                    slide.classList.add('slider' + nextNo);
+                                }
+
+                                // slide.classList.add(current === 'item-1' ? 'item-2' : 'item-1');
+                                // slide.animate({
+                                //     opacity: [0, 1]
+                                // }, 500)
+                            }
+                            let interval = setInterval(click, scrollInterval);
+                            const playBtnclick = function(event){
+                                const btn = document.getElementById('stop-playing-button');
+                                if (btn.className.includes('on')) {
+                                    clearInterval(interval)
+                                    btn.innerHTML = '<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAlUlEQVR4nO3UMQ4BQRSA4aeQqGjdwB5A5whaZ3AONxClC0jELRxg6fQapU6ikE82Vq15k0j4q6m+SWbmTcS/T6GKEqHGGoNs+ODVBbNseINtu8EOwyx42a6nOOOKOTopcBP6WOGBPUaRAb/DBCfcsEA3MuAm9Fr0jiPG8bWw7KNQ4vIUeG6bUgNSZKTrUp9QlQrGz/YEcqgrRsr1S0YAAAAASUVORK5CYII=">再生'
+                                    btn.classList.remove('on');
+                                } else {
+                                    interval = setInterval(click, scrollInterval);
+                                    btn.classList.add('on');
+                                    btn.innerHTML = '<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAQklEQVR4nGNgGAUDAv7//2/6////bCQsiCQniCZnSorBDf9RgTaSnDaaXMOowTAwGhRwMBoUIyUoTGlSCI0CBmoCAJT7AFeI2DPCAAAAAElFTkSuQmCC">停止'
+                                }
+                            }
+
+                            Array
+                                .from(document.getElementsByClassName('slide-btn'))
+                                .forEach((btn) => btn.addEventListener('click', click));
+                                
+                            document.getElementById('stop-playing-button').addEventListener('click', playBtnclick);
+                              //
+                              const flag = document.createElement('div');
+                              flag.id = flagId;
+                              document.body.append(flag)
+                          }
+
+                      });
+       </script>
+       <div class="d-flex justify-content-between mr-sm-3">
+        <h1>
+         <span class="city">
+         </span>
+         <span class="title mt-1 title-fit-content">
+         </span>
+        </h1>
+        <div class="login">
+        </div>
+       </div>
+       <div class="flex-grow-1">
+       </div>
+       <ul class="d-flex justify-content-end align-self-end mr-sm-2 mb-1">
+        <li class="option mr-1 pb-1">
+         <a aria-hidden="true" class="btn btn-sm px-0 py-1 btn-link h-100 py-0" href="https://www.shisetsu.city.yokohama.lg.jp/user/doc/user_public/" rel="noopener noreferrer" target="_blank" type="button">
+          <svg class="icon mr-1">
+           <use xlink:href="dist/images/icons.svg#book">
+           </use>
+          </svg>
+          <span>
+           利用約款
+          </span>
+         </a>
+        </li>
+       </ul>
+       <div class="dock-nav mr-sm-2 mb-1">
+        <button class="btn">
+         <div class="d-flex align align-items-center">
+          <svg class="icon mr-1">
+           <use xlink:href="dist/images/icons.svg#bars">
+           </use>
+          </svg>
+          メニュー
+         </div>
+         <div class="message-count">
+         </div>
+        </button>
+       </div>
+       <!-- -->
+      </div>
+     </header>
+     <!-- -->
+    </form>
+   </div>
+   <form name="myform" parent="[object Object]" value="[object Object]">
+    <div class="application-main">
+     <div class="container">
+      <div class="page-header page-header-border">
+       <div class="d-flex align-items-baseline">
+        <h2 class="page-title pt-2">
+         ログイン
+        </h2>
+       </div>
+       <div class="sr-only">
+        利用者の認証を行う画面です。
+       </div>
+       <div class="page-description">
+        利用者IDとパスワードを入力して「ログイン」ボタンを押してください。
+       </div>
+      </div>
+      <div class="page-body p-3">
+       <div class="user-login">
+        <dl class="user-card d-flex align-items-start">
+         <dt class="card-title d-flex align-items-start">
+          <svg class="mr-2 login-icon mt-2">
+           <use xlink:href="dist/images/icons.svg#user">
+           </use>
+          </svg>
+          <span>
+           利用者ID
+          </span>
+         </dt>
+         <dd class="card-input flex-fill mt-2">
+          <div class="input-resize" parent="[object Object]">
+           <input aria-describedby="vue-validator-77-7" aria-label="利用者ID" class="required input-item form-control form-control-large" data-val="true" data-val-maxlength="利用者IDは256文字以内で入力してください。" data-val-maxlength-max="256" data-val-regex="利用者IDは半角英数字またはハイフンで入力してください。" data-val-regex-pattern="^[a-zA-Z0-9-]+$" data-val-required="利用者IDは必須です。" id="aef7c14e-9de0-4311-b5cf-9d4881b954f3" maxlength="256" name="UserLoginInputModel.Id" type="text"/>
+           <span class="text-danger field-validation-valid" data-valmsg-for="UserLoginInputModel.Id" data-valmsg-replace="true" id="vue-validator-77-7" role="alert">
+           </span>
+          </div>
+         </dd>
+        </dl>
+        <dl class="user-card d-flex align-items-start">
+         <dt class="card-title d-flex align-items-start">
+          <svg class="mr-2 login-icon mt-2">
+           <use xlink:href="dist/images/icons.svg#password_henko">
+           </use>
+          </svg>
+          <span>
+           パスワード
+          </span>
+         </dt>
+         <dd class="card-input flex-fill mt-2">
+          <div class="input-resize" iconeye="dist/images/icons.svg#eye-solid">
+           <div class="d-pwd">
+            <input aria-describedby="vue-validator-37-9" aria-label="パスワード" class="required input-item form-control ip-pwd form-control form-control-large" data-val="true" data-val-regex="パスワードは半角英数字、半角記号で入力してください。" data-val-regex-pattern="^[a-zA-Z0-9 -/:-@\[-\`\{-\~]+$" data-val-required="パスワードは必須です。" id="password" name="UserLoginInputModel.Password" type="password"/>
+            <svg class="icon ic-eye" style="display: none;">
+             <use xlink:href="dist/images/icons.svg#eye-solid">
+             </use>
+            </svg>
+           </div>
+           <span class="text-danger field-validation-valid" data-valmsg-for="UserLoginInputModel.Password" data-valmsg-replace="true" id="vue-validator-37-9" role="alert">
+           </span>
+          </div>
+         </dd>
+        </dl>
+        <hr/>
+        <div class="user-links my-2">
+         <svg class="icon icon-primary mr-1">
+          <use xlink:href="dist/images/icons.svg#question-circle">
+          </use>
+         </svg>
+         <a class="link" href="">
+          <span>
+           パスワードを忘れた場合や、パスワード設定はこちらから
+          </span>
+         </a>
+        </div>
+        <div class="user-links my-2">
+         <svg class="icon icon-primary mr-1">
+          <use xlink:href="dist/images/icons.svg#question-circle">
+          </use>
+         </svg>
+         <a class="link" href="">
+          <span>
+           ログインがロックされた場合はこちらから
+          </span>
+         </a>
+        </div>
+        <div class="notice my-2 mx-auto">
+         <h4 class="title">
+          <svg class="icon mx-2">
+           <use xlink:href="dist/images/icons.svg#exclamation-triangle">
+           </use>
+          </svg>
+          注意事項
+         </h4>
+         <div class="text-left items">
+          <div class="item m-2">
+           ◆ログイン時の利用者IDには、はまっこカードに記載の８桁の利用者登録番号を入力してください。
+           <br/>
+           ※団体構成員の方は、団体構成員としてのログイン時は利用者IDを入力してください。
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="fixed-bottom">
+     <ul class="buttons">
+      <li class="item next">
+       <button aria-label="ログイン" class="btn btn-lg btn-primary">
+        <svg class="icon mr-2">
+         <use xlink:href="dist/images/icons.svg#sign-in-alt">
+         </use>
+        </svg>
+        <span aria-hidden="true">
+         ログイン
+        </span>
+       </button>
+      </li>
+      <li class="item prev">
+       <button aria-label="前に戻る" class="btn btn-lg btn-quaternary">
+        <svg class="icon mr-2">
+         <use xlink:href="dist/images/icons.svg#chevron-left">
+         </use>
+        </svg>
+        <span aria-hidden="true">
+         前に戻る
+        </span>
+       </button>
+      </li>
+      <li class="item mr-auto">
+       <button aria-label="Homeに戻る" class="btn btn-lg btn-quaternary">
+        <svg class="icon mr-2">
+         <use xlink:href="dist/images/icons.svg#home">
+         </use>
+        </svg>
+        <span aria-hidden="true">
+         Homeに戻る
+        </span>
+       </button>
+      </li>
+     </ul>
+    </div>
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8FM07PmIoHBNrHefl2boeIDvVxyyNPUkNhsdZlwDDS4voMKkPIwgW0cBXnLBSS3R6VP0RNynmPe8cGPnluC3AW4U0HI8bZXm3vgVN7Wb2ecgHw2N6RLPIQQPYRZXW7LD9MgwGPhocYsTqMljEsWd98Y"/>
+   </form>
+   <div>
+   </div>
+   <div>
+   </div>
+  </div>
+  <!-- <script src="~/dist/vendor.js" asp-append-version="true"></script> -->
+  <script src="/user/dist/vue.min.js?v=qnzXQhU0Z4_e_yVb7mQIr9NGdKu5Neavzg2YgEMyXM8">
+  </script>
+  <script src="/user/dist/axios.js?v=WfNVU_d6Y1195bxHPdZbaD3lrevVxAqkaVQAUbQI5kc">
+  </script>
+  <script crossorigin="anonymous" src="https://js.monitor.azure.com/scripts/b/ai.2.min.js">
+  </script>
+  <!-- BootstrapVue -->
+  <script src="/user/dist/bootstrap-vue.js?v=97_xOv25NaBGYeFvr_QWfQK1cnJsBiFbEgmNInFPkZU">
+  </script>
+  <script src="/user/dist/generic_message_box.js?v=zz6PEEb414ymG1dtN7PItO2Qt-0p8LAm8tl2qTd3UhY">
+  </script>
+  <!-- vue-dotnet-validator -->
+  <script src="/user/dist/index.js?v=_ivR5TcP8RJzDndgBMNHh_OM0H-uggRCoYjVb7g1pOg">
+  </script>
+  <script src="/user/dist/oec-partial-component.js?v=vqvZQZUzK0OLwdo1aPfiRLESov24hbNGrMhMZanvDLo">
+  </script>
+  <script src="/user/dist/oec-hidden.js?v=-NvLgB3ruKO4EOLbl_z2TWMTLDjN0NoorXY3lyIt42I">
+  </script>
+  <!-- ヘッダ -->
+  <script src="/user/dist/header_partial.js?v=6_DOHzVrNG_jw0MqTw3cmohSA369fPuq-1rhvCKALM0">
+  </script>
+  <!-- Resources -->
+  <script src="/user/Translator">
+  </script>
+  <script>
+   function locationRedirect(nextPage) {
+                document.body.classList.add("loading-indicator-navigation");
+                location.href = nextPage;
+            }
+            function displayLoading() {
+                document.body.classList.add("loading-indicator");
+            }
+            //イベントハンドラがマウスのみに依存しない対策
+            function isWhetherToPressTheSpaceEnterbar() {
+                return event.keyCode === 32 || event.keyCode == 13; 
+            }
+  </script>
+  <script src="/user/dist/generic_message_box.js?v=zz6PEEb414ymG1dtN7PItO2Qt-0p8LAm8tl2qTd3UhY">
+  </script>
+  <script src="/user/dist/header_partial.js?v=6_DOHzVrNG_jw0MqTw3cmohSA369fPuq-1rhvCKALM0">
+  </script>
+  <script>
+   Vue.component('validator-group', vueDotnetValidator.validatorGroup);
+        Vue.component('validator', vueDotnetValidator.validator());
+
+        let app = new Vue({
+            el: '#app',
+            data: {
+                model: JSON.parse("{\u0022UserLoginInputModel\u0022:{\u0022Id\u0022:null,\u0022Password\u0022:null}}"),
+                dialogVisible: false,
+                iconEye: "dist/images/icons.svg#eye-solid",
+            },
+            methods: {
+                login: async function (val) {
+                    if(!this.$refs.validatorgroup.validate(event)){
+                        this.$refs['messageBox'].showMessageBoxError('E-XXX-000004');
+                        return;
+                    }
+                    try {
+                        let form = document.forms.namedItem("myform");
+                        let data = new FormData(form);
+                        data.append('token', this.token == undefined ? null : this.token);
+                        let response = await axios.post("Login/Login", data).catch(function (error) {
+                            locationRedirect("./Error");
+                        });
+                        let loginResult = JSON.parse(response.data);
+                        switch (loginResult.Result) {
+                        case "Error":
+                                this.$refs['messageBox'].showMessageBoxError(loginResult.Information[0], loginResult.Information[1]);
+                                break;
+                        case "Warning":
+                                this.$refs['messageBox'].showMessageBoxNotification(loginResult.Information);
+                                break;
+                        case "Ok":
+                                locationRedirect(loginResult.Information);
+                                break;
+                        case "InvalidRecaptcha":
+                                locationRedirect(loginResult.Information);
+                                break;
+                        default:
+                                return;
+                        }
+                    }
+                    catch (e) {
+                        locationRedirect("./Error");
+                    }
+                },
+                setChangeNumber: function (nameInput) {
+                    let nameVal = document.getElementsByName(nameInput)[0].value;
+                    let number = this.allNumToHalfNum(nameVal);        
+                    document.getElementsByName(nameInput)[0].value = number;
+                },
+                allNumToHalfNum: function(val) {
+                    return val.replace(/[Ａ-Ｚａ-ｚ０-９]/g, function (s) {
+                    return String.fromCharCode(s.charCodeAt(0) - 0xfee0);
+                 });
+                },
+                backToHome: async function(){
+                    let form = document.forms.namedItem("myform");
+                    let data = new FormData(form);
+                    try {
+                        let response = await axios.post("Login/Home", data).catch(function (error) {
+                            locationRedirect("./Error");
+                        });
+                        if(response.data.Result === "Ok") {
+                            locationRedirect(response.data.Information);
+                        }
+                    } catch (e) {
+                    }
+                },
+                openMenu() {
+                    this.dialogVisible = true;
+                },
+                backToPrevious: async function(){
+                    let form = document.forms.namedItem("myform");
+                    let data = new FormData(form);
+                    try {
+                        let response = await axios.post("Login/Pre", data).catch(function (error) {
+                            locationRedirect("./Error");
+                        });
+                        if(response.data.Result === "Ok") {
+                            locationRedirect(response.data.Information);
+                        }
+                    } catch (e) {
+                    }
+                },
+                passwordSettingFirstCheck: async function(){
+                    let form = document.forms.namedItem("myform");
+                    let data = new FormData(form);
+                    try {
+                        let response = await axios.post("Login/PasswordSettingFirstCheck", data).catch(function (error) {
+                            locationRedirect("./Error");
+                        });
+                        if(response.data.Result === "Ok") {
+                            locationRedirect(response.data.Information);
+                        }
+                    } catch (e) {
+                    }
+                },
+                loginUnlock: async function(){
+                    let form = document.forms.namedItem("myform");
+                    let data = new FormData(form);
+                    try {
+                        let response = await axios.post("Login/LoginUnlock", data).catch(function (error) {
+                            locationRedirect("./Error");
+                        });
+                        if(response.data.Result === "Ok") {
+                            locationRedirect(response.data.Information);
+                        }
+                    } catch (e) {
+                    }
+                },
+                openChangePassword: async function (value) {
+                    let form = document.forms.namedItem("myform");
+                    let data = new FormData(form);
+                    try {
+                        let response = await axios.post("Login/PasswordExpiredChange", data).catch(function (error) {
+                            locationRedirect("./Error");
+                        });
+                        if(response.data.Result === "Ok") {
+                            locationRedirect(response.data.Information);
+                        }
+                    } catch (e) {
+                    }
+                },
+                showPassword: function(){
+                    let password = document.getElementById("password");
+                    if (password.type === "password") {
+                        password.type = "text";
+                        this.iconEye = "dist/images/icons.svg#eye-slash"
+                    } else {
+                        password.type = "password";
+                        this.iconEye = "dist/images/icons.svg#eye-solid"
+                    }
+                },
+
+                openLanguageDialogSubmit: function(){},
+            },
+            provide: function(){
+                return {
+                    submit: this.openChangePassword,
+                    submitError: this.error,
+                    submitSuccess: this.login,
+                    openLanguageDialogSubmit: this.openLanguageDialogSubmit,
+                }
+            }
+        })
+  </script>
+  <div id="swiper!!">
+  </div>
+ </body>
+</html>
