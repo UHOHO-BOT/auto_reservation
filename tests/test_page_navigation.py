@@ -17,7 +17,7 @@ def driver():
 
 
 def test_get_page_info(driver):
-    driver.get("https://www.shisetsu.city.yokohama.lg.jp/user/Login")
+    driver.get("https://www.shisetsu.city.yokohama.lg.jp/user/Home")
     soup = page_navigation.get_page_info(driver)
     # ページタイトルが存在するかをチェック
     assert soup.title.string is not None
